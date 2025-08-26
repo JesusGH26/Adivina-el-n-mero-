@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adivina el número</title>
+  <style>
+    /* Estilos mínimos para mejor presentación */
+    body { font-family: sans-serif; max-width: 400px; margin: 2rem auto; }
+    .resultParas p { margin: 0.5rem 0; }
+    #lastResult { padding: 0.5rem; }
+    button { margin-top: 1rem; padding: 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Juego: Adivina el número</h1>
+  <p>Estoy pensando en un número entre 1 y 100. Tienes 10 intentos para adivinarlo.</p>
+
+  <div class="resultParas">
+    <p class="guesses"></p>
+    <p id="lastResult"></p>
+    <p class="lowOrHi"></p>
+  </div>
+
+  <label for="guessField">Introduce tu número:</label>
+  <input type="text" id="guessField" class="guessField" />
+  <input type="submit" value="Enviar respuesta" class="guessSubmit" />
+
+  <script src="script.js"></script>
+</body>
+</html>
